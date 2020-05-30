@@ -11,3 +11,6 @@ src_branch即是你dev_branch切起的分支。通常，这个src_branch是maste
 ```git push -f```  
 即可发现我们的commit都squash了。  
 更常见的情况是，我们的master pull到了最新，可我们在老版本的master下切出了dev_branch。这个时候，如果直接使用上述命令行，则依然会很麻烦的要去解决冲突。解决方法就是，先将master退回我们分支切出时候的commit，然后进行squash，最后再一口气的rebase到最新，即可。  
+
+此外，我们还可以 `git rebase -i HEAD~5`或者`git rebase -i <after-this-commit>`来进行同样的squash操作。  
+

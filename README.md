@@ -14,3 +14,6 @@ src_branch即是你dev_branch切起的分支。通常，这个src_branch是maste
 
 此外，我们还可以 `git rebase -i HEAD~5`或者`git rebase -i <after-this-commit>`来进行同样的squash操作。  
 
+## 关于"<<<<<<<<<<HEAD" "===========" 和 ">>>>>>>>> a1b2c3d4"  
+这是代码共同修改了同一部分。其中，  
+<<<<<<<<<<HEAD 与 =========== 之间的是当前分支修改的内容 ，而 =========== 和  a1b2c3d4 之间是要合入/变基的分支的内容。  

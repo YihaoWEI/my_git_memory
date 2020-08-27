@@ -29,6 +29,9 @@ src_branch即是你dev_branch切起的分支。通常，这个src_branch是maste
 ```git cherry-pick hash-a hash-b```  
 再log查看，此时已经更新了。再git push -f即可。  
 
+## 可视化的10大git命令  
+可参考[](https://dev.to/lydiahallie/cs-visualized-useful-git-commands-37p1)与[译文](https://zhuanlan.zhihu.com/p/147356242?utm_source=wechat_session&utm_medium=social&utm_oi=26778592608256&s_r=0&from=singlemessage)探讨可视化的git的10大命令  
+
 
 
 
